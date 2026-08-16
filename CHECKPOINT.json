@@ -1,0 +1,25 @@
+{
+  "system": "Godot AI -> Codex/ChatGPT -> GitHub -> Android",
+  "chosen_mcp": "hi-godot/godot-ai",
+  "license": "MIT",
+  "target_godot": "4.7.1-stable",
+  "target": "Android portrait",
+  "status": "YELLOW",
+  "verified_here": {
+    "starter_files_created": true,
+    "portrait_project_config_present": true,
+    "touch_test_script_present": true,
+    "codex_mcp_config_template_present": true,
+    "android_export_preset_present": true,
+    "github_ci_static_gate_present": true
+  },
+  "not_verified_here": [
+    "Godot editor runtime execution",
+    "Godot AI plugin activation in a live editor",
+    "Codex MCP handshake to live Godot",
+    "GitHub repository push/Actions execution",
+    "Android APK build",
+    "Android device install/run"
+  ],
+  "blocking_fact": "Connected GitHub account is authenticated but exposes zero repositories to the ChatGPT GitHub app."
+}

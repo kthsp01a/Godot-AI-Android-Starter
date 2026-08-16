@@ -1,0 +1,23 @@
+{
+  "pass": true,
+  "passed": 15,
+  "total": 15,
+  "checks": {
+    "exists:game/project.godot": true,
+    "exists:game/main.tscn": true,
+    "exists:game/scripts/main.gd": true,
+    "exists:game/export_presets.cfg": true,
+    "exists:mcp/codex_config.toml.example": true,
+    "exists:.github/workflows/godot-ci.yml": true,
+    "exists:CHECKPOINT.json": true,
+    "exists:FREE_PATH.md": true,
+    "main_scene_link": true,
+    "portrait_720x1280": true,
+    "scene_script_link": true,
+    "touch_signal_code": true,
+    "android_preset": true,
+    "arm64_enabled": true,
+    "codex_mcp_enabled": true
+  },
+  "note": "File/config consistency QA only. This is not a live Godot/MCP/APK E2E test."
+}
