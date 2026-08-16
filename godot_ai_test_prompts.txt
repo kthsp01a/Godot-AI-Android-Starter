@@ -1,0 +1,5 @@
+1. Show me the current scene hierarchy.
+2. Read res://scripts/main.gd and explain the signal connection.
+3. Change the Status label default text to "MCP 연결 확인".
+4. Run the current project and report runtime errors.
+5. Confirm that the project viewport is 720x1280 and suitable for Android portrait.
