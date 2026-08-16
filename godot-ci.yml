@@ -1,0 +1,28 @@
+name: Godot CI
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  static-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify required Godot files
+        shell: bash
+        run: |
+          test -f game/project.godot
+          test -f game/main.tscn
+          test -f game/scripts/main.gd
+          test -f game/export_presets.cfg
+          grep -q 'run/main_scene="res://main.tscn"' game/project.godot
+          grep -q 'name="Android Debug"' game/export_presets.cfg
+          grep -q 'architectures/arm64-v8a=true' game/export_presets.cfg
+          echo "Static project gate: PASS"
+
+  # Full Android APK export is enabled after the repository has a working
+  # Godot 4.7.1 + matching export-template setup. Keeping this explicit
+  # prevents a false GREEN before a real CI run exists.
