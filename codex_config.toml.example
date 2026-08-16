@@ -1,0 +1,13 @@
+# ~/.codex/config.toml
+# Godot AI README의 Codex 구성 형식을 기준으로 한 템플릿입니다.
+
+[mcp_servers."godot-ai"]
+command = "godot-ai"
+args = [
+  "attach",
+  "--port", "8000",
+  "--ws-port", "9500",
+]
+enabled = true
+startup_timeout_sec = 60
+tool_timeout_sec = 360
